@@ -1,11 +1,15 @@
-function fibonacci(n) {
-  const fib = [0, 1]
-  for (let i = 2; i < n; i++) {
-    fib[i] = fib[i - 1] + fib[i - 2]
+// Factorial of a Number
+
+function factorial(n) {
+  let result = 1
+  for(let i = 2; i <= n; i++) {
+    result = result * i
   }
-  return fib
+  return result
 }
 
-console.log(fibonacci(2)) // [0,1]
-console.log(fibonacci(3)) // [0,1,1]
-console.log(fibonacci(7)) // [0,1,1,2,3,5,8]
+console.log(factorial(0)) // 1
+console.log(factorial(1)) // 1
+console.log(factorial(5)) // 120
+
+// Big-O = O(n)
